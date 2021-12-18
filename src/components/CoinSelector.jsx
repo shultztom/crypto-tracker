@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Select, MenuItem } from '@mui/material';
 import axios from 'axios';
@@ -27,7 +26,7 @@ const CoinSelector = function (props) {
   useEffect(async () => {
     const allCoins = await getCoins();
     setCoins(allCoins);
-  }, [coins]);
+  }, []);
 
   return (
     <Box

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Select, MenuItem } from '@mui/material';
 import axios from 'axios';
@@ -26,7 +25,7 @@ const CurrencySelector = function (props) {
   useEffect(async () => {
     const allCurrs = await getCurrs();
     setCurrs(allCurrs);
-  }, [currs]);
+  }, []);
 
   return (
     <Box
