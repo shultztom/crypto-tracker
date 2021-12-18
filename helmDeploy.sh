@@ -1,0 +1,1 @@
+helm upgrade --install crypto-tracker shultzlab/http-deploy  -f .helm/deploy/values.yaml
